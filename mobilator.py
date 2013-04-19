@@ -20,7 +20,7 @@ from flask import *
 
 MAX_FEED_SIZE = 10*1024*1024
 MAX_FEED_ITEMS = 1000
-MIN_REPLACE_SIZE = 10
+MIN_REPLACE_SIZE = 5
 
 app = Flask(__name__)
 
