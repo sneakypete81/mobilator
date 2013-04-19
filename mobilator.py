@@ -31,10 +31,10 @@ def index():
 @app.route("/mobilator")
 def mobilator():
     feed_url = normalise_url(request.args["feed_url"])
-    normal_site = normalise_url(request.args["normal_site"])
-    mobile_site = normalise_url(request.args["mobile_site"])
+    normal_site = request.args["normal_site"]
+    mobile_site = request.args["mobile_site"]
 
-    if normal_site == "http://":
+    if normal_site == "":
         normal_site = urlparse.urljoin(feed_url, "/")
 
     f = urllib2.urlopen(feed_url)
