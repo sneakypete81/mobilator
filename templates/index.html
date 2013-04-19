@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<title>Mobilator</title>
+</head>
+<body>
+<h1>Mobilator</h1>
+<p>
+This website converts links inside RSS/Atom feeds to point to a mobile-friendly
+version of the target site.
+</p>
+<form action="mobilator" method="get">
+<table>
+<tr>
+  <td>Feed URL:</td><td><input type="text" name="feed_url"/></td>
+</tr>
+<tr>
+  <td>Normal website URL:</td><td><input type="text" name="normal_site"/> (optional)</td>
+</tr>
+<tr>
+  <td>Mobile-friendly URL:</td><td><input type="text" name="mobile_site"/></td>
+</tr>
+<tr>
+  <td></td><td><input type="submit" value="Convert Feed"/></td>
+</tr>
+</form>
+
+</body>
+</html>

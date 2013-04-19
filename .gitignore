@@ -1,3 +1,9 @@
+# Emacs backups
+*~
+
+# AppFog configuration
+manifest.yml
+
 *.py[cod]
 
 # C extensions
